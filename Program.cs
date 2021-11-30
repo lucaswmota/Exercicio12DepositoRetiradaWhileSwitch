@@ -22,7 +22,8 @@ namespace Exercicio12DepositoRetiradaWhileSwitch
                     saldo = double.Parse(Console.ReadLine());
                 }
 
-                Console.WriteLine("Saldo Atual: " + saldo.ToString("C"));
+                Console.WriteLine("Saldo: " + saldo.ToString("C") + "" +
+                    "\n");
 
                 int resp = 0;
 
@@ -40,7 +41,7 @@ namespace Exercicio12DepositoRetiradaWhileSwitch
                             Console.Write("Escolha o valor a ser depositado: ");
                             saldo += double.Parse(Console.ReadLine());
 
-                            Console.WriteLine("Saldo após depósito: " + saldo.ToString("C"));
+                            
                             break;
 
                         case 2:
@@ -55,7 +56,7 @@ namespace Exercicio12DepositoRetiradaWhileSwitch
                             }
                             
                                 saldo -= retirada;
-                                Console.WriteLine("Saldo após retirada: " + saldo.ToString("C"));
+                                
                             
                             break;
 
@@ -67,7 +68,7 @@ namespace Exercicio12DepositoRetiradaWhileSwitch
                             break;
 
                     }
-                    Console.WriteLine("Deseja repetir o processo?");
+                    Console.WriteLine("Saldo: " + saldo.ToString("C"));
                     resp = 0;
 
                 }
